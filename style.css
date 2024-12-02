@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#to-top{
+  position: fixed;
+  z-index: 999;
+  background-color: aqua;
+  bottom: 10%;
+  font-size: 30px;
+  right: 0px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  background-color: rgb(17,17,17);
+  color: white;
+  transition: all 0.4s;
+
+  
+}
+/* #to-top .in{
+  right: 0px;
+  cursor: pointer;
+  opacity: 1;
+} */
+.main-container{
+    height: auto;
+    width: 100%;
+    /* background-color: yellow; */
+   
+}
+.containers{
+   /* border: 2px solid red; */
+   width: 100%;
+   height: 80x;
+   padding-inline: 100px;
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-inline: 20px;
+}
+.navbar i{
+    font-size: 20px;
+    color: white;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  .dropdown h1{
+    padding-left: 5px;
+    font-size: 14px;
+    padding-top: 6px;
+  }
+  .dropdown button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+    
+   
+  }
+  .dropdown button:hover{
+    background-color: transparent;
+    border: none;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+
+  nav{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .left-nav{
+    width: 30%;
+  }
+  .left-nav img{
+    width: 60%;
+  }
+  .right-nav{
+    width: 70%;
+    /* background-color: chocolate; */
+  }
+  .right-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .right-nav ul li{
+    list-style: none;
+  }
+  .right-nav ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  .right-nav ul li a:hover{
+    text-decoration: underline;
+    color: green;
+  }
+  .hero-section{
+    min-height: 30vh;
+  }
+  .header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+  }
+  .container-fluidss{
+     width: 100%;
+     height: auto;
+  }
+  .hero-section .background{
+    background-image:url("./bg_test.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:400px ;
+    width: 100%;
+  }
+
+  .text-section{
+    height: 700px;
+    width: 100%;
+   
+    padding-block: 20px;
+    background-color: rgb(242,242,242);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-section h1{
+    font-size: 42px;
+    font-weight: 400;
+    padding-bottom: 20px;
+  }
+  .gridss{
+    width: 80%;
+    /* background-color: cadetblue; */
+   
+  }
+  .cards{
+    height: 450px;
+    width: 100%;
+    /* border: 2px solid blue; */
+    background-color: rgb(242,242,242);
+
+  }
+  .card-head{
+    height: 250px;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  .card-head img{
+    height: 100%;
+    width: 100%;
+  }
+  .card-body{
+    height: 200px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-body h1{
+    font-size: 30px;
+  }
+  .card-body button{
+    height: 50px;
+    width: 150px;
+    background-color: rgb(0,159,227);
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    font-size: 18px;
+  }
+
+  footer{
+    height:auto ;
+    padding-block: 30px;
+    width: 100%;
+    background-color:rgb(33,33,33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .left-footer{
+    width: 42%;
+  }
+  .left-footer img{
+    width: 35%;
+  }
+  .left-footer h1{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .left-footer p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 5px;
+  }
+  .right-footer{
+    width: 42%;
+  }
+  .right-footer img{
+    height: 100px;
+    width: 100px;
+  }
+
+  .footer-btm{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(17,17,17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inner-btm{
+    width: 84%;
+    height:60px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.inner-btm .left-btm{
+  font-size: 14px;
+  font-weight: 400;
+  color:rgba(255, 255, 255, 0.35);
+}
+.inner-btm .right-btm ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+.right-btm{
+  width: 30%;
+}
+.right-btm ul li{
+  list-style: none;
+}
+.right-btm ul li a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.35);
+  
+}
+.right-btm ul li a:hover{
+  text-decoration: underline;
+  color: white;
+}
+  
+
+
+
+
+
+@media (max-width:786px) {
+  .main-container{
+    height: auto;
+    width: 100%;
+  }
+  nav .right-nav{
+    display: none;
+  }
+  .left-nav{
+    width: 100%;
+    text-align: center;
+  }
+  .left-nav img{
+    width: 40%;
+  }
+  .navbar{
+    height: auto;
+    width: 100%;
+  }
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  .dropdown h1{
+    padding-left: 5px;
+    font-size: 14px;
+    padding-top: 6px;
+  }
+  .dropdown button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+    
+   
+  }
+  .dropdown button:hover{
+    background-color: transparent;
+    border: none;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+  .text-section{
+    height: auto;
+  }
+  .text-section h1{
+    font-size: 38px;
+    font-weight: 400;
+  }
+  .gridss{
+    width: 100%;
+    padding: 10px;
+    
+  }
+  .gridss .card-body h1{
+      font-size: 23px;
+  }
+  .gridss .card-body button{
+    margin-top: 10px;
+  }
+  .gridss .cards{
+    margin-top: 10px;
+  }
+  footer{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .left-footer{
+    width:90% ;
+    height: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    
+  }
+  .left-footer p{
+    line-height: 15px;
+    
+    
+  }
+  .right-footer{
+    width:90% ;
+    height: auto;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer-btm{
+   height: 100px;
+   width: 100%;
+  }
+  .inner-btm{
+    height: auto;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+
+  }
+  .left-btm{
+    width: 100%;
+    text-align: center;
+  }
+  .right-btm {
+   width: 60%;
+  }
+
+}
